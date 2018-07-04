@@ -34,7 +34,7 @@ public class Course {
         return title;
     }
 
-    @Column(name = "level")
+    @Enumerated(value =EnumType.STRING)
     public Level getLevel() {
         return level;
     }
